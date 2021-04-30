@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="margin_small">10dp</dimen>
+    <dimen name="textSize_inspiringPersonItem_name">30sp</dimen>
+    <dimen name="textSize_inspiringPersonItem_details">20sp</dimen>
+    <dimen name="margin_medium">15dp</dimen>
+    <dimen name="textSIze_inspiringPerson_name">40sp</dimen>
+    <dimen name="padding_medium">15dp</dimen>
+    <dimen name="textSize_inspiringPersonItem_dob">25sp</dimen>
+    <dimen name="textSize_inspiringPerson_dob">30sp</dimen>
+    <dimen name="padding_small">10dp</dimen>
+    <dimen name="textSize_personDetails">20sp</dimen>
+    <dimen name="textSize_title">36sp</dimen>
+</resources>

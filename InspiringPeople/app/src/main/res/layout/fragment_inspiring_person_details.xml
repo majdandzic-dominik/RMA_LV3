@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <TextView
+        android:id="@+id/tv_inspiringPerson_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="Person name"
+        android:textSize="@dimen/textSIze_inspiringPerson_name"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="@dimen/margin_medium"/>
+
+    <TextView
+        android:id="@+id/tv_inspiringPerson_dob"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tv_inspiringPerson_name"
+        app:layout_constraintStart_toStartOf="@id/tv_inspiringPerson_name"
+        app:layout_constraintEnd_toEndOf="@id/tv_inspiringPerson_name"
+        android:textSize="@dimen/textSize_inspiringPerson_dob"
+        android:text="1.1.1999."
+        android:gravity="center"/>
+
+    <ImageView
+        android:id="@+id/iv_inspiringPerson_picture"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        app:layout_constraintTop_toBottomOf="@id/tv_inspiringPerson_dob"
+        app:layout_constraintStart_toStartOf="@id/tv_inspiringPerson_dob"
+        app:layout_constraintEnd_toEndOf="@id/tv_inspiringPerson_dob"
+        android:layout_marginTop="@dimen/margin_medium"
+        android:layout_marginBottom="@dimen/margin_medium"
+        android:scaleType="fitXY"/>
+
+    <TextView
+        android:id="@+id/tv_inspiringPerson_details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/iv_inspiringPerson_picture"
+        app:layout_constraintStart_toStartOf="@id/iv_inspiringPerson_picture"
+        app:layout_constraintEnd_toEndOf="@id/iv_inspiringPerson_picture"
+        android:text="@tools:sample/lorem/random"
+        android:scrollbars="vertical"
+        android:textSize="@dimen/textSize_personDetails"
+        android:gravity="center"
+        android:padding="@dimen/padding_medium"/>
+
+    <Button
+        android:id="@+id/b_updatePerson"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tv_inspiringPerson_details"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/guide_center_vertical"
+        android:text="Update"/>
+
+    <Button
+        android:id="@+id/b_deletePerson"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tv_inspiringPerson_details"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@id/guide_center_vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="Delete"/>
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guide_center_vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintGuide_percent="0.5"
+        android:orientation="vertical"/>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

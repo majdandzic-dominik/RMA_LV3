@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">InspiringPeople</string>
+    <string name="newPerson_header_text">Create new inspiring person</string>
+    <string name="newPerson_name_inputHint">Enter name of person</string>
+    <string name="newPerson_img_inputHint">Enter image url</string>
+    <string name="newPerson_details_inputHint">Input person details</string>
+    <string name="newPerson_saveText">Save person</string>
+    <string name="updatePerson_saveText">Save changes</string>
+    <string name="updatePerson_header_text">Update inspiring person</string>
+</resources>

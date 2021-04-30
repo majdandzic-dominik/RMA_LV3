@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/margin_medium"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:id="@+id/iv_inspiringPersonItem_picture"
+        android:layout_width="125dp"
+        android:layout_height="125dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:scaleType="fitXY"/>
+
+    <TextView
+        android:id="@+id/tv_inspiringPersonItem_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@id/iv_inspiringPersonItem_picture"
+        app:layout_constraintStart_toEndOf="@id/iv_inspiringPersonItem_picture"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="Preson name"
+        android:maxLines="1"
+        android:textSize="@dimen/textSize_inspiringPersonItem_name"
+        android:paddingStart="@dimen/padding_small"
+        android:paddingLeft="@dimen/padding_small"
+        android:background="@color/lightGray"/>
+
+    <TextView
+        android:id="@+id/tv_inspiringPersonItem_dob"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tv_inspiringPersonItem_name"
+        app:layout_constraintStart_toEndOf="@id/iv_inspiringPersonItem_picture"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="1.1.1999."
+        android:maxLines="1"
+        android:textSize="@dimen/textSize_inspiringPersonItem_dob"
+        android:paddingStart="@dimen/padding_small"
+        android:paddingLeft="@dimen/padding_small"
+        android:background="@color/white"/>
+
+    <TextView
+        android:id="@+id/tv_inspringPersonItem_details"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/tv_inspiringPersonItem_dob"
+        app:layout_constraintBottom_toBottomOf="@id/iv_inspiringPersonItem_picture"
+        app:layout_constraintStart_toEndOf="@id/iv_inspiringPersonItem_picture"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="@tools:sample/lorem/random"
+        android:maxLines="2"
+        android:textSize="@dimen/textSize_inspiringPersonItem_details"
+        android:paddingStart="@dimen/padding_small"
+        android:paddingLeft="@dimen/padding_small"
+        android:background="@color/lightGray"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

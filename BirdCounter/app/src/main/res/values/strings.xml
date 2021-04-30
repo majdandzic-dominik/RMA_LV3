@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Bird Counter</string>
+    <string name="label_seeBird">See bird</string>
+</resources>
